@@ -1,0 +1,12 @@
+all: 
+  children: 
+    managers:
+      hosts: 
+        flask:
+    workers:
+      hosts:
+        worker-1:
+
+vars:
+  ansible_user: orlandlleshi
+    

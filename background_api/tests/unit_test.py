@@ -15,7 +15,5 @@ class TestResponse(TestBase):
             backgrounds = [
                 b'Young rich kid that grew up in the city',
                 b'Young poor kid that grew up in the city', 
-                b'Young wealthy kid that grew up in the country',
-                b'Young poor kid that grew up in the country',
                 ]
             self.assertIn(response.data, backgrounds)
