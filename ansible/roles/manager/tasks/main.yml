@@ -7,7 +7,7 @@
 
 - name: Deploy stack
   docker_stack:
-  state: present
-  name: project
-  compose:
-    - ~/docker_compose.yaml  
+    state: present
+    name: project
+    compose:
+      - ~/docker_compose.yaml  
