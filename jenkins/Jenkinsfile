@@ -7,10 +7,10 @@ pipeline{
         DATABASE_URI = credentials("DATABASE_URI")
     }
     stages {
-        stage("Install requriements"){
+        stage("Install requirements"){
             steps{
                 script{
-                    if(env.install == 'fasle'){
+                    if(env.install == 'false'){
                         sh "bash jenkins/install-requirements.sh"
                     }
                 }
