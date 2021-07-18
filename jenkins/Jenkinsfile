@@ -38,7 +38,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                ansiblePlaybook credentialsId: '662d6130-78b5-4504-9644-e1a2f942ff34', installation: 'ansible1', inventory: 'home/Orland/CorePracticalProject/ansible/playbook.yaml', playbook: 'home/Orland/CorePracticalProject/ansible/playbook.yaml'
+                sh 'bash jenkins/deploy.sh'
             }
         }
     }
