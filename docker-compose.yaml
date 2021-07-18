@@ -11,6 +11,7 @@ services:
        DATABASE_URI: ${DATABASE_URI}
     deploy:
       replicas: 3
+      
   character_api:
     container_name: character_api
     image: orlandlleshi/project2-service-2
@@ -19,6 +20,7 @@ services:
       - target: 5001
     deploy:
       replicas: 3
+
   background_api: 
     container_name: background_api
     image: orlandlleshi/project2-service-3
@@ -26,7 +28,8 @@ services:
     ports: 
       - target: 5002
     deploy:
-      replicas: 3    
+      replicas: 3  
+
   endpoint_api:
     container_name: endpoint_api
     image: orlandlleshi/project2-service-4
