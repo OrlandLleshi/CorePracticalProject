@@ -12,14 +12,14 @@ cd service1
 python 3 -m pytest --cov=application
 cd ..
 
-cd character
-python 3 -m pytest --cov=application
+cd character_api
+python 3 -m pytest --cov=app
 cd ..
 
-cd background
-python 3 -m pytest --cov=application
+cd background_api
+python 3 -m pytest --cov=app
 cd ..
 
-cd endpoint
-python 3 -m pytest --cov=application
+cd endpoint_api
+python 3 -m pytest --cov=app
 cd ..
