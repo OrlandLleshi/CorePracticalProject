@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
     agent any
     environment {
         DOCKER_USERNAME = credentials('DOCKER_USERNAME')
@@ -7,37 +7,42 @@ pipeline{
         DATABASE_URI = credentials("DATABASE_URI")
     }
     stages {
-        stage("Install requiements"){
-            steps{
+        stage("Install requirements") {
+            steps {
                 script{
-                    if(env.install == 'fasle'){
+                    if (env.install == 'false'){
                         sh "bash jenkins/install-requirements.sh"
                     }
                 }
             }
         }
-        stage("Test"){
-            steps{
+        stage("Test") {
+            steps {
+                
                 sh "bash jenkins/test.sh"
             }
         }
-        stage("Build"){
-            steps{
+        stage("Build") {
+            steps {
+                
                 sh "docker-compose build"
             }
         }
-        stage("Push"){
-            steps{
-               sh "docker-compose push" 
+        stage("Push") {
+            steps {
+                
+                sh "docker-compose push"
             }
         }
-        stage("Configuration management"){
-            steps{
-                sh "cd ansible && ~/.local/bin/ansible-playbook -i inventory.yaml playbook.yaml"
+        stage("Configuration Management") {
+            steps {
+                
+                sh "cd ansible && ~/home/ansible/.local/bin/ansible-playbook -i inventory.yaml playbook.yaml"
             }
         }
-        stage("Deploy"){
-            steps{
+        stage("Deploy") {
+            steps {
+                
                 sh "bash jenkins/deploy.sh"
             }
         }
