@@ -42,7 +42,7 @@ pipeline{
                 sh 'sudo apt install software-properties-common -y'
                 sh 'sudo apt-add-repository --yes --update ppa:ansible/ansible'
                 sh 'sudo apt install ansible'
-                sh 'ansible-playbook -i ansible/inventory.yaml ansible/playbook.yaml'
+                sh 'cd ansible && ansible-playbook -i ansible/inventory.yaml ansible/playbook.yaml'
             }
         }
     }
