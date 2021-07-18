@@ -12,3 +12,4 @@ class TestResponse(TestBase):
     def test_ricky1(self):
         response = self.client.get(url_for('endpoint'), json={'character':'Ricky', 'background':'Young rich kid that grew up in the city'})
         self.assertEqual(b'Bad Ending', response.data)
+

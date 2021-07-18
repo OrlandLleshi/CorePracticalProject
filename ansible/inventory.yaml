@@ -1,15 +1,15 @@
-all: 
+all:
+  children:
+    managers:
+      hosts:
+        flask:
+    workers:
+      hosts:
+        worker-1:
+    nginx:
+      hosts:
+        nginx: 
   vars:
-    ansible_user: orlandlleshi
-    ansible_ssh_private_key_file: '~/.ssh/ansible_id_rsa'  
-    ansible_ssh_common_args: '-o StrictHostKeyChecking= no'
-  children: 
-      managers:
-        hosts: 
-          flask:
-      workers:
-        hosts:
-          worker-1:
-      load_balancer:
-        hosts:
-          nginx:
+    ansible_user: Orland
+    ansible_ssh_private_key_file: '~/.ssh/ansible_id_rsa'
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'

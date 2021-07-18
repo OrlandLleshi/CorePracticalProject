@@ -1,13 +1,16 @@
 ---
 # tasks file for manager
-- name: Initialise a new swarm
+- name: Init a new swarm with default parameters
   docker_swarm:
     state: present
-  register: swarm info 
+  register: swarm_info 
 
-- name: Deploy stack
-  docker_stack:
-    state: present
-    name: project
-    compose:
-      - ~/docker_compose.yaml  
+#- name: Deploy stack
+#  docker_stack:
+#    state: present
+#    name: project
+#    compose:
+#      - ~/docker-compose.yaml 
+#    pkg:
+#    - jsondiff
+#    - pyyaml 

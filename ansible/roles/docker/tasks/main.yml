@@ -1,7 +1,7 @@
 ---
 # tasks file for docker
 
-- name: Install requirements
+- name: Install APT requirements
   apt:
     state: latest
     update_cache: true
@@ -32,11 +32,13 @@
     - docker-ce
     - docker-ce-cli
     - containerd.io
+
 - name: Add Ubuntu user to docker group 
   user: 
-    name: orlandlleshi  
+    name: ubuntu 
     groups: docker
     append: yes
+
 - name: pip docker
   pip: 
     executable: pip3
