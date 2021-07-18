@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-scp -i ~/.ssh/ansible_id_rsa docker-compose.yaml Orland@flask:/home/jenkins/docker-compose.yaml 
+scp -i ~/.ssh/ansible_id_rsa docker-compose.yaml Orland@flask:/home/docker-compose.yaml 
 
 ssh -i ~/.ssh/ansible Orland@flask << EOF
     export DATABASE_URI=${DATABASE_URI}
