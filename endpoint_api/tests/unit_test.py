@@ -13,6 +13,8 @@ class TestResponse(TestBase):
         response = self.client.get(url_for('endpoint'), json={'character':'Ricky', 'background':'Young rich kid that grew up in the city'})
         self.assertEqual(b'Bad Ending', response.data)
 
+
+
     def test_ricky2(self):
         response = self.client.get(url_for('endpoint'), json={'character':'Ricky', 'background':'Young poor kid that grew up in the city'})
         self.assertEqual(b'Good Ending', response.data)
@@ -50,4 +52,5 @@ class TestResponse(TestBase):
         self.assertEqual(b'Good Ending', response.data)
 
     
+
 
