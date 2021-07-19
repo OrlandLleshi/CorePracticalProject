@@ -38,16 +38,22 @@
 
 
 #### ERD
+This ERD shows the database that will be used within this project. There will be only one table and hence no relationships can be seen.
 ![ERD](https://i.imgur.com/UwSJRzf.png)
 
 #### First Trello 
+This is the original trello that was created when first approaching the project which looks at the main functionality needed.
 ![FirsT Trello](https://i.imgur.com/sy7vGnm.png)
 #### Final Trello 
-![Evolved](https://i.imgur.com/w1JXh5l.png)
-#### First Risk Assessment  
+This is the finalised trello board at the time of handing in this project. 
+![Evolved](https://i.imgur.com/nyA9fdB.png)
+
+#### First Risk Assessment
+This is the original risk assessment when first approaching the project.  
 ![First Risk Assessment](https://i.imgur.com/eXKeq3L.png)
 
-#### Final Risk Assessment 
+#### Final Risk Assessment
+This is the final risk assessment which looks at multiple aspects of the project  
 ![Evoveld](https://i.imgur.com/jWtkIAh.png)
 
 ## **Product**
@@ -55,16 +61,23 @@
 
 ![App](https://i.imgur.com/TQA5r7b.png)
 ![Updated](https://i.imgur.com/XRC9eBU.png)
+These images above show the randomly generated story of the project
+
+
 ## Testing
 ##### Another very important aspect of the development of an application would be the testing section of an application. This needs to be done before the build to ensure that each section of the application, more specifically the backe nd of the application, functions properly with next to no issues. The test coverage of each service can be observed in the section below. 
 
 #### Service 1 
+This shows the test coverage run on service 1 which looked at perform get and post requests to other services
 ![service1](https://i.imgur.com/KLVRMb5.png)
 #### Character
+This is a simpler test as this involved only testing that the randomly generated name was correct and within the list of names specified
 ![caharacter](https://i.imgur.com/DQfassv.png)
 #### Background 
+This much of the same for the background also 
 ![background](https://i.imgur.com/CPWMBCi.png)
 #### Endpoint 
+The testing within this looked at testing the other randomly generated objects to generate a good or bad ending for the user.  
 ![endpoint](https://i.imgur.com/pCGwFdU.png)
 ## Issues 
 ##### As with any project, some issues were faced in this project. The most significant of which was Jenkins. The build in Jenkins was fairly successful apart from the deployment stage. At first, Jenkins failed to deploy the product. After some troubleshooting, the product was able to deploy but when trying to access the product through the NGINX IP adress I was met with a 502 error. This could be fixed in the future with further troubleshooting. 
