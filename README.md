@@ -26,7 +26,7 @@
 
 ##### There are a number of tools to be used in this project including trello boards, databases, version control and cloud configuration.
 
-#### This project follows the CI pipeline which can be seen below. 
+##### This project follows the CI pipeline which can be seen below. 
 
 ![CI Pipeline](https://i.imgur.com/FzomtV1.png)
 ##### The CI pipeline consists of a development stage, project tracking stage, version control, unit testing, Jenkins, automation, external load balancing and a live environment. This project looks at integrateing multiple services together within the same network. Service 1 interacts directly with the user. Services 2 and 3 generate random objects for the user while service 4 automatically generates the last object which the user will see as these objects are sent back to service 1. 
@@ -37,6 +37,11 @@
 #### Updated 
 ![Updated](https://i.imgur.com/yFGBYwn.png)
 
+##### The above pictures show the project pathways in this project. This is how the services would interact with one another and in turn interact with the user and with the database itself. 
+
+##### A swarm configuration would also ideally be set up with at least one manager nodeand one worker node which would both be connected to the external load balancer. This would give the chance for more and more nodes to be added to the swarm later down the line. Jenkins would also be integrated as a way of automating testing, building and deployment of the application. This would automate all of the manual steps that would need to be taken in order to have the product fully up and running. 
+
+##### It is also important to be working in branches for different stages of the application which is why development branches would need to be implemented with a final branch merge being initialised at the end. This is very important in sectioning up the different aspects of the project. This has been implemented throughout the project.  
 
 ##### The project that I have chosen to embark on looks at enerating a random character name and background story for the user. Based on these two factors, an ending to the story can be generated and returned to the user.
 
@@ -45,22 +50,22 @@
 
 
 #### ERD
-This ERD shows the database that will be used within this project. There will be only one table and hence no relationships can be seen.
+##### This ERD shows the database that will be used within this project. There will be only one table and hence no relationships can be seen.
 ![ERD](https://i.imgur.com/UwSJRzf.png)
 
 #### First Trello 
-This is the original trello that was created when first approaching the project which looks at the main functionality needed.
+##### This is the original trello that was created when first approaching the project which looks at the main functionality needed.
 ![FirsT Trello](https://i.imgur.com/sy7vGnm.png)
 #### Final Trello 
-This is the finalised trello board at the time of handing in this project. 
+##### This is the finalised trello board at the time of handing in this project. 
 ![Evolved](https://i.imgur.com/nyA9fdB.png)
 
 #### First Risk Assessment
-This is the original risk assessment when first approaching the project.  
+##### This is the original risk assessment when first approaching the project.  
 ![First Risk Assessment](https://i.imgur.com/eXKeq3L.png)
 
 #### Final Risk Assessment
-This is the final risk assessment which looks at multiple aspects of the project  
+##### This is the final risk assessment which looks at multiple aspects of the project  
 ![Evoveld](https://i.imgur.com/jWtkIAh.png)
 
 ## **Product**
@@ -68,24 +73,24 @@ This is the final risk assessment which looks at multiple aspects of the project
 
 ![App](https://i.imgur.com/TQA5r7b.png)
 ![Updated](https://i.imgur.com/XRC9eBU.png)
-These images above show the randomly generated story of the project
+##### These images above show the randomly generated story of the project
 
 
 ## Testing
 ##### Another very important aspect of the development of an application would be the testing section of an application. This needs to be done before the build to ensure that each section of the application, more specifically the backe nd of the application, functions properly with next to no issues. The test coverage of each service can be observed in the section below. 
 
 #### Service 1 
-This shows the test coverage run on service 1 which looked at perform get and post requests to other services
+##### This shows the test coverage run on service 1 which looked at perform get and post requests to other services
 ![service1](https://i.imgur.com/KLVRMb5.png)
 #### Character
-This is a simpler test as this involved only testing that the randomly generated name was correct and within the list of names specified
+##### This is a simpler test as this involved only testing that the randomly generated name was correct and within the list of names specified
 ![caharacter](https://i.imgur.com/DQfassv.png)
 #### Background 
-This much of the same for the background also 
+##### This much of the same for the background also 
 
 ![background](https://i.imgur.com/CPWMBCi.png)
 #### Endpoint 
-The testing within this looked at testing the other randomly generated objects to generate a good or bad ending for the user.  
+##### The testing within this looked at testing the other randomly generated objects to generate a good or bad ending for the user.  
 ![endpoint](https://i.imgur.com/pCGwFdU.png)
 ## Issues 
 ##### As with any project, some issues were faced in this project. The most significant of which was Jenkins. The build in Jenkins was fairly successful apart from the deployment stage. At first, Jenkins failed to deploy the product. After some troubleshooting, the product was able to deploy but when trying to access the product through the NGINX IP adress I was met with a 502 error. This could be fixed in the future with further troubleshooting. 
