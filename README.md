@@ -82,6 +82,7 @@ This is a simpler test as this involved only testing that the randomly generated
 ![caharacter](https://i.imgur.com/DQfassv.png)
 #### Background 
 This much of the same for the background also 
+
 ![background](https://i.imgur.com/CPWMBCi.png)
 #### Endpoint 
 The testing within this looked at testing the other randomly generated objects to generate a good or bad ending for the user.  
