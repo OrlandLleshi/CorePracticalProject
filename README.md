@@ -22,7 +22,11 @@
 ##### The aim of this project is to create a multi service product that can randomly generate two random values for a user and based upon these values, a final value will be generated.
 
 ### Project sections 
-##### This project follows the CI pipeline which can be seen below. 
+##### The brief for this project stated that four services would need to be created for this project. The first would refer to a HTML page and would show the user the outcome of a set of randomly generated objects. Services 2 and 3 would generate these objects for the user and the final service would perform an action based on the initial two. 
+
+##### There are a number of tools to be used in this project including trello boards, databases, version control and cloud configuration.
+
+#### This project follows the CI pipeline which can be seen below. 
 
 ![CI Pipeline](https://i.imgur.com/FzomtV1.png)
 ##### The CI pipeline consists of a development stage, project tracking stage, version control, unit testing, Jenkins, automation, external load balancing and a live environment. This project looks at integrateing multiple services together within the same network. Service 1 interacts directly with the user. Services 2 and 3 generate random objects for the user while service 4 automatically generates the last object which the user will see as these objects are sent back to service 1. 
@@ -32,6 +36,9 @@
 
 #### Updated 
 ![Updated](https://i.imgur.com/yFGBYwn.png)
+
+
+##### The project that I have chosen to embark on looks at enerating a random character name and background story for the user. Based on these two factors, an ending to the story can be generated and returned to the user.
 
 ## Planning Stage
 ##### Before the building of any project can begin, it is important to go through the planning stage of the project. The planning stage of this project consisted of a trello board with user stories and tasks, a small ERD that shows the tables used in this project and a risk assessment. 
